@@ -54,3 +54,15 @@ https://github.com/makersacademy/course/blob/master/bookmark_manager/images/book
 
 
 
+
+##Database
+
+-db/
+&nbsp;&nbsp;&nbsp; -migrations/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -01_create_bookmarks_table.sql/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\c bookmark_manager
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -01_create_bookmarks_table_test.sql/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\c bookmark_manager_test
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));

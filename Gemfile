@@ -10,3 +10,4 @@ gem 'simplecov', require: false
 gem 'simplecov-console', require: false
 gem 'rake'
 gem 'pg'
+gem 'sinatra-flash'

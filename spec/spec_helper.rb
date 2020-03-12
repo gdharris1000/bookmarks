@@ -5,9 +5,11 @@ require 'simplecov'
 require 'simplecov-console'
 require_relative './setup_test_database'
 
-require File.join(File.dirname(__FILE__), '..', 'app.rb')
+# require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
-ENV['RACK_ENV'] = 'test'
+require_relative '../app.rb'
+
+ENV['RACK_ENV'] = "test"
 
 RSpec.configure do |config|
   config.before(:each) do

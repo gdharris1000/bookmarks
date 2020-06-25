@@ -1,5 +1,6 @@
 require 'database_connection'
 require 'comment'
+require 'tag'
 
 class Bookmark
 
@@ -53,7 +54,10 @@ class Bookmark
 
         comment_class.where(bookmark_id: id)
 
-        # DatabaseConnection.query("SELECT * FROM comments WHERE bookmark_id = #{id};")
+    end
+
+    def tags(tag_class = Tag)
+        tag_class.where(bookmark_id: id)
     end
 
     private
